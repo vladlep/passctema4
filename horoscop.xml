@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<students  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="I:\vlad\serios\java\passc4\horoscop.xsd">
+	<student nr_matr="1" nume="Vlad" medie="9" />
+	<student nr_matr="2" nume="Maria" medie="8" />
+	<student nr_matr="3" nume="Mircea" medie="7"  > </student> 
+</students>
