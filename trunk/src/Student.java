@@ -5,6 +5,8 @@ import java.util.Date;
 
 public class Student 
 {
+	
+	// e un transfer object din DAO
 	private int nr_matr;
 	private String nume;
 	private double medie;

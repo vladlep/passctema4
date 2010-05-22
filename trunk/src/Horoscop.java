@@ -5,16 +5,23 @@ import java.util.List;
 
 public class Horoscop 
 {
-	public ArrayList<Student> list;
+	private ArrayList<Student> list;
+	private DataAccessObject dataSursa;
 	
-	public Horoscop()
+	public Horoscop(DataAccessObject d)
 	{
 		list = new ArrayList<Student>();
+		dataSursa = d;
+	}
+	
+	public void changeSource(DataAccessObject newSource)
+	{
+		dataSursa = newSource; 
 	}
 	
 	public void loadList()
 	{
-		list = (ArrayList<Student>) XMLReader.loadList();
+		list = (ArrayList<Student>) dataSursa.loadList();
 	}
 
 	public void printList() 
