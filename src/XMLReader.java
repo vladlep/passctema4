@@ -11,7 +11,7 @@ public class XMLReader extends DefaultHandler {
     static final String JAXP_SCHEMA_LANGUAGE = "http://java.sun.com/xml/jaxp/properties/schemaLanguage";
     static final String W3C_XML_SCHEMA = "http://www.w3.org/2001/XMLSchema";
 
-    public static void loadList () {
+    public static List loadList () {
         /*if (argv.length != 1) {
             System.err.println("Usage: cmd filename");
             System.exit(1);
@@ -65,7 +65,8 @@ public class XMLReader extends DefaultHandler {
             t.printStackTrace();
         }
 
-        System.exit(0);
+       
+		return list;
     }
 
 //===========================================================
@@ -74,7 +75,7 @@ public class XMLReader extends DefaultHandler {
     private int nr_matr;
     private String nume;
     private double medie;
-    private ArrayList<Student> list = new ArrayList<Student>(); 
+    private static ArrayList<Student> list = new ArrayList<Student>(); 
 
 //===========================================================
 // SAX DocumentHandler methods

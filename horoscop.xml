@@ -3,5 +3,9 @@
           xsi:noNamespaceSchemaLocation="I:\vlad\serios\java\passc4\horoscop.xsd">
 	<student nr_matr="1" nume="Vlad" medie="9" />
 	<student nr_matr="2" nume="Maria" medie="8" />
-	<student nr_matr="3" nume="Mircea" medie="7"  > </student> 
+	<student nr_matr="3" nume="Mircea" medie="8"  > </student>
+	<student nr_matr="4" nume="Nr4" medie="8" />
+	<student nr_matr="5" nume="Nr5" medie="9.5" />
+	<student nr_matr="6" nume="Nr5" medie="5" />
+	<student nr_matr="7" nume="Nr6" medie="6.5" /> 
 </students>
