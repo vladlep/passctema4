@@ -58,7 +58,7 @@ public class Student
 		result = nume.charAt(0)%2;
 		DateFormat dateFormat = new SimpleDateFormat("dd");
 		Date data = new Date(); 
-		System.out.println("data " + (Integer.valueOf(dateFormat.format(data))));
+	//	System.out.println("data " + (Integer.valueOf(dateFormat.format(data))));
 		result = (result +(Integer.valueOf(dateFormat.format(data))) ) %2;
 	//	System.out.println("result " + result);
 		if(result == 1) 
