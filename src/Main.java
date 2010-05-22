@@ -3,7 +3,7 @@ public class Main
 {
 	public static void main(String args[])
 	{
-	Horoscop h = new Horoscop();
+	Horoscop h = new Horoscop(new XMLReader());
 	
 	h.loadList();
 	

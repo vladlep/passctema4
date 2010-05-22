@@ -2,16 +2,19 @@
 // Uses the SAX interface
 import java.io.*;
 import java.util.*;
+
 import javax.xml.parsers.*;
 import org.xml.sax.*;
 import org.xml.sax.helpers.*;
 
-public class XMLReader extends DefaultHandler {
-
+public class XMLReader extends DefaultHandler implements DataAccessObject
+{
+	//DataSource din paternul DAO
+	
     static final String JAXP_SCHEMA_LANGUAGE = "http://java.sun.com/xml/jaxp/properties/schemaLanguage";
     static final String W3C_XML_SCHEMA = "http://www.w3.org/2001/XMLSchema";
 
-    public static List loadList () {
+    public  List loadList () {
         /*if (argv.length != 1) {
             System.err.println("Usage: cmd filename");
             System.exit(1);
@@ -134,5 +137,12 @@ public class XMLReader extends DefaultHandler {
             System.out.println("characters:" + s);   
         }
     }
+
+	@Override
+	public void storeList(List lista)
+	{
+		
+		// nu se cere 
+	}
     
 }
