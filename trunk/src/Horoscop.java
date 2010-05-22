@@ -59,4 +59,19 @@ public class Horoscop
 		return result;
 		
 	}
+	
+	public int catiVorAveaMediaScazuta()
+	{
+		Iterator<Student> it = list.iterator();
+		int contor = 0;
+		Student aux;
+		while(it.hasNext())
+		{
+			aux = it.next();
+			if( aux.getMedie() >8 && !aux.cresteMedia() )
+				contor++;
+		}
+		
+		return contor;
+	}
 }

@@ -1,3 +1,7 @@
+ import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class Student 
 {
@@ -44,6 +48,20 @@ public class Student
 			//System.out.println("2 for "+result);
 		}
 		if(result == 1)
+			return true;
+		return false;
+	}
+
+	public boolean vaFiZiuaBuna() 
+	{
+		int result =0;
+		result = nume.charAt(0)%2;
+		DateFormat dateFormat = new SimpleDateFormat("dd");
+		Date data = new Date(); 
+		System.out.println("data " + (Integer.valueOf(dateFormat.format(data))));
+		result = (result +(Integer.valueOf(dateFormat.format(data))) ) %2;
+	//	System.out.println("result " + result);
+		if(result == 1) 
 			return true;
 		return false;
 	}
